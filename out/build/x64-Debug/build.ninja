@@ -41,13 +41,50 @@ include CMakeFiles\rules.ninja
 
 cmake_ninja_workdir = C$:\Users\andre\source\repos\solid-ecommerce-order-system\out\build\x64-Debug\
 # =============================================================================
+# Object build statements for STATIC_LIBRARY target solid_ecommerce_order_system_lib
+
+
+#############################################
+# Order-only phony target for solid_ecommerce_order_system_lib
+
+build cmake_object_order_depends_target_solid_ecommerce_order_system_lib: phony || .
+
+build CMakeFiles\solid_ecommerce_order_system_lib.dir\dummy.cpp.obj: CXX_COMPILER__solid_ecommerce_order_system_lib_unscanned_Debug C$:\Users\andre\source\repos\solid-ecommerce-order-system\out\build\x64-Debug\dummy.cpp || cmake_object_order_depends_target_solid_ecommerce_order_system_lib
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -Zi
+  INCLUDES = -IC:\Users\andre\source\repos\solid-ecommerce-order-system\include -IC:\boost_1_90_0
+  OBJECT_DIR = CMakeFiles\solid_ecommerce_order_system_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles\solid_ecommerce_order_system_lib.dir
+  TARGET_COMPILE_PDB = CMakeFiles\solid_ecommerce_order_system_lib.dir\solid_ecommerce_order_system_lib.pdb
+  TARGET_PDB = solid_ecommerce_order_system_lib.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target solid_ecommerce_order_system_lib
+
+
+#############################################
+# Link the static library solid_ecommerce_order_system_lib.lib
+
+build solid_ecommerce_order_system_lib.lib: CXX_STATIC_LIBRARY_LINKER__solid_ecommerce_order_system_lib_Debug CMakeFiles\solid_ecommerce_order_system_lib.dir\dummy.cpp.obj
+  CONFIG = Debug
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -Zi
+  LINK_FLAGS = /machine:x64
+  OBJECT_DIR = CMakeFiles\solid_ecommerce_order_system_lib.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\solid_ecommerce_order_system_lib.dir\solid_ecommerce_order_system_lib.pdb
+  TARGET_FILE = solid_ecommerce_order_system_lib.lib
+  TARGET_PDB = solid_ecommerce_order_system_lib.pdb
+
+# =============================================================================
 # Object build statements for EXECUTABLE target solid_ecommerce_order_system
 
 
 #############################################
 # Order-only phony target for solid_ecommerce_order_system
 
-build cmake_object_order_depends_target_solid_ecommerce_order_system: phony || .
+build cmake_object_order_depends_target_solid_ecommerce_order_system: phony || cmake_object_order_depends_target_solid_ecommerce_order_system_lib
 
 build CMakeFiles\solid_ecommerce_order_system.dir\src\main.cpp.obj: CXX_COMPILER__solid_ecommerce_order_system_unscanned_Debug C$:\Users\andre\source\repos\solid-ecommerce-order-system\src\main.cpp || cmake_object_order_depends_target_solid_ecommerce_order_system
   CONFIG = Debug
@@ -55,15 +92,6 @@ build CMakeFiles\solid_ecommerce_order_system.dir\src\main.cpp.obj: CXX_COMPILER
   INCLUDES = -IC:\Users\andre\source\repos\solid-ecommerce-order-system\include -IC:\boost_1_90_0
   OBJECT_DIR = CMakeFiles\solid_ecommerce_order_system.dir
   OBJECT_FILE_DIR = CMakeFiles\solid_ecommerce_order_system.dir\src
-  TARGET_COMPILE_PDB = CMakeFiles\solid_ecommerce_order_system.dir\
-  TARGET_PDB = solid_ecommerce_order_system.pdb
-
-build CMakeFiles\solid_ecommerce_order_system.dir\tests\test_main.cpp.obj: CXX_COMPILER__solid_ecommerce_order_system_unscanned_Debug C$:\Users\andre\source\repos\solid-ecommerce-order-system\tests\test_main.cpp || cmake_object_order_depends_target_solid_ecommerce_order_system
-  CONFIG = Debug
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -Zi
-  INCLUDES = -IC:\Users\andre\source\repos\solid-ecommerce-order-system\include -IC:\boost_1_90_0
-  OBJECT_DIR = CMakeFiles\solid_ecommerce_order_system.dir
-  OBJECT_FILE_DIR = CMakeFiles\solid_ecommerce_order_system.dir\tests
   TARGET_COMPILE_PDB = CMakeFiles\solid_ecommerce_order_system.dir\
   TARGET_PDB = solid_ecommerce_order_system.pdb
 
@@ -75,11 +103,11 @@ build CMakeFiles\solid_ecommerce_order_system.dir\tests\test_main.cpp.obj: CXX_C
 #############################################
 # Link the executable solid_ecommerce_order_system.exe
 
-build solid_ecommerce_order_system.exe: CXX_EXECUTABLE_LINKER__solid_ecommerce_order_system_Debug CMakeFiles\solid_ecommerce_order_system.dir\src\main.cpp.obj CMakeFiles\solid_ecommerce_order_system.dir\tests\test_main.cpp.obj
+build solid_ecommerce_order_system.exe: CXX_EXECUTABLE_LINKER__solid_ecommerce_order_system_Debug CMakeFiles\solid_ecommerce_order_system.dir\src\main.cpp.obj | solid_ecommerce_order_system_lib.lib || solid_ecommerce_order_system_lib.lib
   CONFIG = Debug
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -Zi
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  LINK_LIBRARIES = solid_ecommerce_order_system_lib.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
   OBJECT_DIR = CMakeFiles\solid_ecommerce_order_system.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -87,6 +115,57 @@ build solid_ecommerce_order_system.exe: CXX_EXECUTABLE_LINKER__solid_ecommerce_o
   TARGET_FILE = solid_ecommerce_order_system.exe
   TARGET_IMPLIB = solid_ecommerce_order_system.lib
   TARGET_PDB = solid_ecommerce_order_system.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target tests
+
+
+#############################################
+# Order-only phony target for tests
+
+build cmake_object_order_depends_target_tests: phony || cmake_object_order_depends_target_solid_ecommerce_order_system_lib
+
+build CMakeFiles\tests.dir\tests\test_main.cpp.obj: CXX_COMPILER__tests_unscanned_Debug C$:\Users\andre\source\repos\solid-ecommerce-order-system\tests\test_main.cpp || cmake_object_order_depends_target_tests
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -Zi
+  INCLUDES = -IC:\Users\andre\source\repos\solid-ecommerce-order-system\include -IC:\Users\andre\source\repos\solid-ecommerce-order-system\extern\googletest\googletest\include
+  OBJECT_DIR = CMakeFiles\tests.dir
+  OBJECT_FILE_DIR = CMakeFiles\tests.dir\tests
+  TARGET_COMPILE_PDB = CMakeFiles\tests.dir\
+  TARGET_PDB = tests.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target tests
+
+
+#############################################
+# Link the executable tests.exe
+
+build tests.exe: CXX_EXECUTABLE_LINKER__tests_Debug CMakeFiles\tests.dir\tests\test_main.cpp.obj | solid_ecommerce_order_system_lib.lib || solid_ecommerce_order_system_lib.lib
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -Zi
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = gtest_main.lib  solid_ecommerce_order_system_lib.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\tests.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\tests.dir\
+  TARGET_FILE = tests.exe
+  TARGET_IMPLIB = tests.lib
+  TARGET_PDB = tests.pdb
+
+
+#############################################
+# Utility command for test
+
+build CMakeFiles\test.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\andre\source\repos\solid-ecommerce-order-system\out\build\x64-Debug && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build test: phony CMakeFiles\test.util
 
 
 #############################################
@@ -116,6 +195,10 @@ build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 
 build solid_ecommerce_order_system: phony solid_ecommerce_order_system.exe
 
+build solid_ecommerce_order_system_lib: phony solid_ecommerce_order_system_lib.lib
+
+build tests: phony tests.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -124,7 +207,7 @@ build solid_ecommerce_order_system: phony solid_ecommerce_order_system.exe
 #############################################
 # Folder: C:/Users/andre/source/repos/solid-ecommerce-order-system/out/build/x64-Debug
 
-build all: phony solid_ecommerce_order_system.exe
+build all: phony solid_ecommerce_order_system_lib.lib solid_ecommerce_order_system.exe tests.exe
 
 # =============================================================================
 # Built-in targets
@@ -133,7 +216,7 @@ build all: phony solid_ecommerce_order_system.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja C$:\Users\andre\source\repos\solid-ecommerce-order-system\out\build\x64-Debug\cmake_install.cmake: RERUN_CMAKE | C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Linker\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Linker\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake C$:\Users\andre\source\repos\solid-ecommerce-order-system\CMakeLists.txt CMakeCache.txt CMakeFiles\4.1.1-msvc1\CMakeCCompiler.cmake CMakeFiles\4.1.1-msvc1\CMakeCXXCompiler.cmake CMakeFiles\4.1.1-msvc1\CMakeRCCompiler.cmake CMakeFiles\4.1.1-msvc1\CMakeSystem.cmake
+build build.ninja C$:\Users\andre\source\repos\solid-ecommerce-order-system\out\build\x64-Debug\cmake_install.cmake C$:\Users\andre\source\repos\solid-ecommerce-order-system\out\build\x64-Debug\CTestTestfile.cmake: RERUN_CMAKE | C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Linker\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Linker\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake C$:\Users\andre\source\repos\solid-ecommerce-order-system\CMakeLists.txt CMakeCache.txt CMakeFiles\4.1.1-msvc1\CMakeCCompiler.cmake CMakeFiles\4.1.1-msvc1\CMakeCXXCompiler.cmake CMakeFiles\4.1.1-msvc1\CMakeRCCompiler.cmake CMakeFiles\4.1.1-msvc1\CMakeSystem.cmake
   pool = console
 
 

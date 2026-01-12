@@ -15,7 +15,9 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1,
+						2
 					]
 				}
 			],
@@ -30,7 +32,9 @@
 					"name" : "solid-ecommerce-order-system",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1,
+						2
 					]
 				}
 			],
@@ -39,8 +43,22 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "solid_ecommerce_order_system::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-solid_ecommerce_order_system-Debug-18f8572397da3ba03551.json",
+					"jsonFile" : "target-solid_ecommerce_order_system-Debug-8e9de0d6ad3a60e2ca1d.json",
 					"name" : "solid_ecommerce_order_system",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "solid_ecommerce_order_system_lib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-solid_ecommerce_order_system_lib-Debug-985d39a051ab900e2f78.json",
+					"name" : "solid_ecommerce_order_system_lib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tests::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tests-Debug-e4dda531b954f297167c.json",
+					"name" : "tests",
 					"projectIndex" : 0
 				}
 			]
