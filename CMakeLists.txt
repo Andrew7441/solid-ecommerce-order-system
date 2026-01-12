@@ -24,7 +24,7 @@ endif()
 # Core library (all code except main.cpp)
 add_library(solid_ecommerce_order_system_lib STATIC
   ${SRC_ALL}
-)
+ "include/discounts/discount_coupon.h" "include/discounts/discount_loyalty.h" "include/discounts/discount_seasonal.h")
 
 target_include_directories(
   solid_ecommerce_order_system_lib
@@ -36,7 +36,7 @@ target_include_directories(
 # App executable (only main.cpp)
 add_executable(solid_ecommerce_order_system
   src/main.cpp
-)
+ "include/discounts/discount_coupon.h" "include/discounts/discount_loyalty.h" "include/discounts/discount_seasonal.h")
 
 target_link_libraries(
   solid_ecommerce_order_system
@@ -65,7 +65,7 @@ add_executable(tests
   tests/cart_tests.cpp
   tests/discount_tests.cpp
   tests/checkout_tests.cpp
-)
+ "include/discounts/discount_coupon.h" "include/discounts/discount_loyalty.h" "include/discounts/discount_seasonal.h")
 
 target_include_directories(
   tests
