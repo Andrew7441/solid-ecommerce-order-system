@@ -49,12 +49,93 @@ cmake_ninja_workdir = C$:\Users\andre\source\repos\solid-ecommerce-order-system\
 
 build cmake_object_order_depends_target_solid_ecommerce_order_system_lib: phony || .
 
-build CMakeFiles\solid_ecommerce_order_system_lib.dir\dummy.cpp.obj: CXX_COMPILER__solid_ecommerce_order_system_lib_unscanned_Debug C$:\Users\andre\source\repos\solid-ecommerce-order-system\out\build\x64-Debug\dummy.cpp || cmake_object_order_depends_target_solid_ecommerce_order_system_lib
+build CMakeFiles\solid_ecommerce_order_system_lib.dir\src\cart.cpp.obj: CXX_COMPILER__solid_ecommerce_order_system_lib_unscanned_Debug C$:\Users\andre\source\repos\solid-ecommerce-order-system\src\cart.cpp || cmake_object_order_depends_target_solid_ecommerce_order_system_lib
   CONFIG = Debug
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -Zi
   INCLUDES = -IC:\Users\andre\source\repos\solid-ecommerce-order-system\include -IC:\boost_1_90_0
   OBJECT_DIR = CMakeFiles\solid_ecommerce_order_system_lib.dir
-  OBJECT_FILE_DIR = CMakeFiles\solid_ecommerce_order_system_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles\solid_ecommerce_order_system_lib.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\solid_ecommerce_order_system_lib.dir\solid_ecommerce_order_system_lib.pdb
+  TARGET_PDB = solid_ecommerce_order_system_lib.pdb
+
+build CMakeFiles\solid_ecommerce_order_system_lib.dir\src\checkout.cpp.obj: CXX_COMPILER__solid_ecommerce_order_system_lib_unscanned_Debug C$:\Users\andre\source\repos\solid-ecommerce-order-system\src\checkout.cpp || cmake_object_order_depends_target_solid_ecommerce_order_system_lib
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -Zi
+  INCLUDES = -IC:\Users\andre\source\repos\solid-ecommerce-order-system\include -IC:\boost_1_90_0
+  OBJECT_DIR = CMakeFiles\solid_ecommerce_order_system_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles\solid_ecommerce_order_system_lib.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\solid_ecommerce_order_system_lib.dir\solid_ecommerce_order_system_lib.pdb
+  TARGET_PDB = solid_ecommerce_order_system_lib.pdb
+
+build CMakeFiles\solid_ecommerce_order_system_lib.dir\src\discounts\discount_coupon.cpp.obj: CXX_COMPILER__solid_ecommerce_order_system_lib_unscanned_Debug C$:\Users\andre\source\repos\solid-ecommerce-order-system\src\discounts\discount_coupon.cpp || cmake_object_order_depends_target_solid_ecommerce_order_system_lib
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -Zi
+  INCLUDES = -IC:\Users\andre\source\repos\solid-ecommerce-order-system\include -IC:\boost_1_90_0
+  OBJECT_DIR = CMakeFiles\solid_ecommerce_order_system_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles\solid_ecommerce_order_system_lib.dir\src\discounts
+  TARGET_COMPILE_PDB = CMakeFiles\solid_ecommerce_order_system_lib.dir\solid_ecommerce_order_system_lib.pdb
+  TARGET_PDB = solid_ecommerce_order_system_lib.pdb
+
+build CMakeFiles\solid_ecommerce_order_system_lib.dir\src\discounts\discount_loyalty.cpp.obj: CXX_COMPILER__solid_ecommerce_order_system_lib_unscanned_Debug C$:\Users\andre\source\repos\solid-ecommerce-order-system\src\discounts\discount_loyalty.cpp || cmake_object_order_depends_target_solid_ecommerce_order_system_lib
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -Zi
+  INCLUDES = -IC:\Users\andre\source\repos\solid-ecommerce-order-system\include -IC:\boost_1_90_0
+  OBJECT_DIR = CMakeFiles\solid_ecommerce_order_system_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles\solid_ecommerce_order_system_lib.dir\src\discounts
+  TARGET_COMPILE_PDB = CMakeFiles\solid_ecommerce_order_system_lib.dir\solid_ecommerce_order_system_lib.pdb
+  TARGET_PDB = solid_ecommerce_order_system_lib.pdb
+
+build CMakeFiles\solid_ecommerce_order_system_lib.dir\src\discounts\discount_seasonal.cpp.obj: CXX_COMPILER__solid_ecommerce_order_system_lib_unscanned_Debug C$:\Users\andre\source\repos\solid-ecommerce-order-system\src\discounts\discount_seasonal.cpp || cmake_object_order_depends_target_solid_ecommerce_order_system_lib
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -Zi
+  INCLUDES = -IC:\Users\andre\source\repos\solid-ecommerce-order-system\include -IC:\boost_1_90_0
+  OBJECT_DIR = CMakeFiles\solid_ecommerce_order_system_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles\solid_ecommerce_order_system_lib.dir\src\discounts
+  TARGET_COMPILE_PDB = CMakeFiles\solid_ecommerce_order_system_lib.dir\solid_ecommerce_order_system_lib.pdb
+  TARGET_PDB = solid_ecommerce_order_system_lib.pdb
+
+build CMakeFiles\solid_ecommerce_order_system_lib.dir\src\order.cpp.obj: CXX_COMPILER__solid_ecommerce_order_system_lib_unscanned_Debug C$:\Users\andre\source\repos\solid-ecommerce-order-system\src\order.cpp || cmake_object_order_depends_target_solid_ecommerce_order_system_lib
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -Zi
+  INCLUDES = -IC:\Users\andre\source\repos\solid-ecommerce-order-system\include -IC:\boost_1_90_0
+  OBJECT_DIR = CMakeFiles\solid_ecommerce_order_system_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles\solid_ecommerce_order_system_lib.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\solid_ecommerce_order_system_lib.dir\solid_ecommerce_order_system_lib.pdb
+  TARGET_PDB = solid_ecommerce_order_system_lib.pdb
+
+build CMakeFiles\solid_ecommerce_order_system_lib.dir\src\payment_processor.cpp.obj: CXX_COMPILER__solid_ecommerce_order_system_lib_unscanned_Debug C$:\Users\andre\source\repos\solid-ecommerce-order-system\src\payment_processor.cpp || cmake_object_order_depends_target_solid_ecommerce_order_system_lib
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -Zi
+  INCLUDES = -IC:\Users\andre\source\repos\solid-ecommerce-order-system\include -IC:\boost_1_90_0
+  OBJECT_DIR = CMakeFiles\solid_ecommerce_order_system_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles\solid_ecommerce_order_system_lib.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\solid_ecommerce_order_system_lib.dir\solid_ecommerce_order_system_lib.pdb
+  TARGET_PDB = solid_ecommerce_order_system_lib.pdb
+
+build CMakeFiles\solid_ecommerce_order_system_lib.dir\src\product.cpp.obj: CXX_COMPILER__solid_ecommerce_order_system_lib_unscanned_Debug C$:\Users\andre\source\repos\solid-ecommerce-order-system\src\product.cpp || cmake_object_order_depends_target_solid_ecommerce_order_system_lib
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -Zi
+  INCLUDES = -IC:\Users\andre\source\repos\solid-ecommerce-order-system\include -IC:\boost_1_90_0
+  OBJECT_DIR = CMakeFiles\solid_ecommerce_order_system_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles\solid_ecommerce_order_system_lib.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\solid_ecommerce_order_system_lib.dir\solid_ecommerce_order_system_lib.pdb
+  TARGET_PDB = solid_ecommerce_order_system_lib.pdb
+
+build CMakeFiles\solid_ecommerce_order_system_lib.dir\src\repository_inmemory.cpp.obj: CXX_COMPILER__solid_ecommerce_order_system_lib_unscanned_Debug C$:\Users\andre\source\repos\solid-ecommerce-order-system\src\repository_inmemory.cpp || cmake_object_order_depends_target_solid_ecommerce_order_system_lib
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -Zi
+  INCLUDES = -IC:\Users\andre\source\repos\solid-ecommerce-order-system\include -IC:\boost_1_90_0
+  OBJECT_DIR = CMakeFiles\solid_ecommerce_order_system_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles\solid_ecommerce_order_system_lib.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\solid_ecommerce_order_system_lib.dir\solid_ecommerce_order_system_lib.pdb
+  TARGET_PDB = solid_ecommerce_order_system_lib.pdb
+
+build CMakeFiles\solid_ecommerce_order_system_lib.dir\src\shipping_calculator.cpp.obj: CXX_COMPILER__solid_ecommerce_order_system_lib_unscanned_Debug C$:\Users\andre\source\repos\solid-ecommerce-order-system\src\shipping_calculator.cpp || cmake_object_order_depends_target_solid_ecommerce_order_system_lib
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -Zi
+  INCLUDES = -IC:\Users\andre\source\repos\solid-ecommerce-order-system\include -IC:\boost_1_90_0
+  OBJECT_DIR = CMakeFiles\solid_ecommerce_order_system_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles\solid_ecommerce_order_system_lib.dir\src
   TARGET_COMPILE_PDB = CMakeFiles\solid_ecommerce_order_system_lib.dir\solid_ecommerce_order_system_lib.pdb
   TARGET_PDB = solid_ecommerce_order_system_lib.pdb
 
@@ -66,7 +147,7 @@ build CMakeFiles\solid_ecommerce_order_system_lib.dir\dummy.cpp.obj: CXX_COMPILE
 #############################################
 # Link the static library solid_ecommerce_order_system_lib.lib
 
-build solid_ecommerce_order_system_lib.lib: CXX_STATIC_LIBRARY_LINKER__solid_ecommerce_order_system_lib_Debug CMakeFiles\solid_ecommerce_order_system_lib.dir\dummy.cpp.obj
+build solid_ecommerce_order_system_lib.lib: CXX_STATIC_LIBRARY_LINKER__solid_ecommerce_order_system_lib_Debug CMakeFiles\solid_ecommerce_order_system_lib.dir\src\cart.cpp.obj CMakeFiles\solid_ecommerce_order_system_lib.dir\src\checkout.cpp.obj CMakeFiles\solid_ecommerce_order_system_lib.dir\src\discounts\discount_coupon.cpp.obj CMakeFiles\solid_ecommerce_order_system_lib.dir\src\discounts\discount_loyalty.cpp.obj CMakeFiles\solid_ecommerce_order_system_lib.dir\src\discounts\discount_seasonal.cpp.obj CMakeFiles\solid_ecommerce_order_system_lib.dir\src\order.cpp.obj CMakeFiles\solid_ecommerce_order_system_lib.dir\src\payment_processor.cpp.obj CMakeFiles\solid_ecommerce_order_system_lib.dir\src\product.cpp.obj CMakeFiles\solid_ecommerce_order_system_lib.dir\src\repository_inmemory.cpp.obj CMakeFiles\solid_ecommerce_order_system_lib.dir\src\shipping_calculator.cpp.obj
   CONFIG = Debug
   LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -Zi
   LINK_FLAGS = /machine:x64
@@ -134,6 +215,33 @@ build CMakeFiles\tests.dir\tests\test_main.cpp.obj: CXX_COMPILER__tests_unscanne
   TARGET_COMPILE_PDB = CMakeFiles\tests.dir\
   TARGET_PDB = tests.pdb
 
+build CMakeFiles\tests.dir\tests\cart_tests.cpp.obj: CXX_COMPILER__tests_unscanned_Debug C$:\Users\andre\source\repos\solid-ecommerce-order-system\tests\cart_tests.cpp || cmake_object_order_depends_target_tests
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 -Zi
+  INCLUDES = -IC:\Users\andre\source\repos\solid-ecommerce-order-system\include -IC:\Users\andre\source\repos\solid-ecommerce-order-system\extern\googletest\googletest\include -external:IC:\Users\andre\source\repos\solid-ecommerce-order-system\out\build\x64-Debug\_deps\googletest-src\googletest\include -external:IC:\Users\andre\source\repos\solid-ecommerce-order-system\out\build\x64-Debug\_deps\googletest-src\googletest -external:W0
+  OBJECT_DIR = CMakeFiles\tests.dir
+  OBJECT_FILE_DIR = CMakeFiles\tests.dir\tests
+  TARGET_COMPILE_PDB = CMakeFiles\tests.dir\
+  TARGET_PDB = tests.pdb
+
+build CMakeFiles\tests.dir\tests\discount_tests.cpp.obj: CXX_COMPILER__tests_unscanned_Debug C$:\Users\andre\source\repos\solid-ecommerce-order-system\tests\discount_tests.cpp || cmake_object_order_depends_target_tests
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 -Zi
+  INCLUDES = -IC:\Users\andre\source\repos\solid-ecommerce-order-system\include -IC:\Users\andre\source\repos\solid-ecommerce-order-system\extern\googletest\googletest\include -external:IC:\Users\andre\source\repos\solid-ecommerce-order-system\out\build\x64-Debug\_deps\googletest-src\googletest\include -external:IC:\Users\andre\source\repos\solid-ecommerce-order-system\out\build\x64-Debug\_deps\googletest-src\googletest -external:W0
+  OBJECT_DIR = CMakeFiles\tests.dir
+  OBJECT_FILE_DIR = CMakeFiles\tests.dir\tests
+  TARGET_COMPILE_PDB = CMakeFiles\tests.dir\
+  TARGET_PDB = tests.pdb
+
+build CMakeFiles\tests.dir\tests\checkout_tests.cpp.obj: CXX_COMPILER__tests_unscanned_Debug C$:\Users\andre\source\repos\solid-ecommerce-order-system\tests\checkout_tests.cpp || cmake_object_order_depends_target_tests
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 -Zi
+  INCLUDES = -IC:\Users\andre\source\repos\solid-ecommerce-order-system\include -IC:\Users\andre\source\repos\solid-ecommerce-order-system\extern\googletest\googletest\include -external:IC:\Users\andre\source\repos\solid-ecommerce-order-system\out\build\x64-Debug\_deps\googletest-src\googletest\include -external:IC:\Users\andre\source\repos\solid-ecommerce-order-system\out\build\x64-Debug\_deps\googletest-src\googletest -external:W0
+  OBJECT_DIR = CMakeFiles\tests.dir
+  OBJECT_FILE_DIR = CMakeFiles\tests.dir\tests
+  TARGET_COMPILE_PDB = CMakeFiles\tests.dir\
+  TARGET_PDB = tests.pdb
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target tests
@@ -142,7 +250,7 @@ build CMakeFiles\tests.dir\tests\test_main.cpp.obj: CXX_COMPILER__tests_unscanne
 #############################################
 # Link the executable tests.exe
 
-build tests.exe: CXX_EXECUTABLE_LINKER__tests_Debug CMakeFiles\tests.dir\tests\test_main.cpp.obj | lib\gtest_main.lib solid_ecommerce_order_system_lib.lib lib\gtest.lib || lib\gtest.lib lib\gtest_main.lib solid_ecommerce_order_system_lib.lib
+build tests.exe: CXX_EXECUTABLE_LINKER__tests_Debug CMakeFiles\tests.dir\tests\test_main.cpp.obj CMakeFiles\tests.dir\tests\cart_tests.cpp.obj CMakeFiles\tests.dir\tests\discount_tests.cpp.obj CMakeFiles\tests.dir\tests\checkout_tests.cpp.obj | lib\gtest_main.lib solid_ecommerce_order_system_lib.lib lib\gtest.lib || lib\gtest.lib lib\gtest_main.lib solid_ecommerce_order_system_lib.lib
   CONFIG = Debug
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -Zi
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console

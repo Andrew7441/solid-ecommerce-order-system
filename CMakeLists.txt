@@ -6,8 +6,11 @@ endif()
 
 project("solid-ecommerce-order-system")
 
-# Collect all .cpp files in src/
-file(GLOB SRC_ALL ${CMAKE_SOURCE_DIR}/src/*.cpp)
+# Collect all .cpp files in src/ (including discounts)
+file(GLOB SRC_ALL
+  ${CMAKE_SOURCE_DIR}/src/*.cpp
+  ${CMAKE_SOURCE_DIR}/src/discounts/*.cpp
+)
 
 # Remove main.cpp from the library sources
 list(FILTER SRC_ALL EXCLUDE REGEX ".*main\\.cpp$")
@@ -19,7 +22,9 @@ if(SRC_ALL STREQUAL "")
 endif()
 
 # Core library (all code except main.cpp)
-add_library(solid_ecommerce_order_system_lib STATIC ${SRC_ALL})
+add_library(solid_ecommerce_order_system_lib STATIC
+  ${SRC_ALL}
+)
 
 target_include_directories(
   solid_ecommerce_order_system_lib
@@ -28,9 +33,8 @@ target_include_directories(
     C:/boost_1_90_0
 )
 
-# App executable
-add_executable(
-  solid_ecommerce_order_system
+# App executable (only main.cpp)
+add_executable(solid_ecommerce_order_system
   src/main.cpp
 )
 
@@ -55,10 +59,12 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(googletest)
 
-# Test executable
-add_executable(
-  tests
+# Test executable (only test sources; link library + gtest)
+add_executable(tests
   tests/test_main.cpp
+  tests/cart_tests.cpp
+  tests/discount_tests.cpp
+  tests/checkout_tests.cpp
 )
 
 target_include_directories(
@@ -77,3 +83,4 @@ target_link_libraries(
 
 enable_testing()
 add_test(NAME AllTests COMMAND tests)
+
