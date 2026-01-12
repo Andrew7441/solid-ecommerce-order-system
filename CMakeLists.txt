@@ -47,6 +47,14 @@ target_include_directories(
     C:/boost_1_90_0
 )
 
+# Fetch GoogleTest
+include(FetchContent)
+FetchContent_Declare(
+  googletest
+  URL https://github.com/google/googletest/archive/refs/heads/main.zip
+)
+FetchContent_MakeAvailable(googletest)
+
 # Test executable
 add_executable(
   tests
@@ -69,4 +77,3 @@ target_link_libraries(
 
 enable_testing()
 add_test(NAME AllTests COMMAND tests)
-

@@ -1,0 +1,21 @@
+# ninja log v6
+8	79	7899193858962974	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	2542502ab3cf3cc8
+8	79	7899193858962974	C:/Users/andre/source/repos/solid-ecommerce-order-system/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	2542502ab3cf3cc8
+81	2358	7899193881788034	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	d8f99031113eb913
+81	2358	7899193881788034	C:/Users/andre/source/repos/solid-ecommerce-order-system/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	d8f99031113eb913
+2358	2442	7899193882666333	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	e38a592784118ef8
+2358	2442	7899193882666333	C:/Users/andre/source/repos/solid-ecommerce-order-system/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	e38a592784118ef8
+2442	2507	7899193883313219	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	115e5de31461498f
+2442	2507	7899193883313219	C:/Users/andre/source/repos/solid-ecommerce-order-system/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	115e5de31461498f
+2508	2569	7899193883942870	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	615dd38af5f47375
+2508	2569	7899193883942870	C:/Users/andre/source/repos/solid-ecommerce-order-system/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	615dd38af5f47375
+2570	2632	7899193884571166	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	b1db983dbd715d1d
+2570	2632	7899193884571166	C:/Users/andre/source/repos/solid-ecommerce-order-system/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	b1db983dbd715d1d
+2632	2696	7899193885209288	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	e43c70f9c2096347
+2632	2696	7899193885209288	C:/Users/andre/source/repos/solid-ecommerce-order-system/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	e43c70f9c2096347
+2696	2760	7899193885841745	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	15efaca5889df69
+2696	2760	7899193885841745	C:/Users/andre/source/repos/solid-ecommerce-order-system/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	15efaca5889df69
+2760	2847	7899193886726487	CMakeFiles/googletest-populate-complete	cbb80bbbcb26de6
+2760	2847	7899193886726487	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	cbb80bbbcb26de6
+2760	2847	7899193886726487	C:/Users/andre/source/repos/solid-ecommerce-order-system/out/build/x64-Debug/_deps/googletest-subbuild/CMakeFiles/googletest-populate-complete	cbb80bbbcb26de6
+2760	2847	7899193886726487	C:/Users/andre/source/repos/solid-ecommerce-order-system/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	cbb80bbbcb26de6
