@@ -1,14 +1,14 @@
 #include "cart.h"
 
-void Cart::addProduct(const Product& product) {
+void cart::addproduct(const product& product) {
 	products.push_back(product);
 }
 
-void Cart::addDiscount(std::shared_ptr<discount> discount) {
+void cart::addDiscount(std::shared_ptr<discount> discount) {
 	discounts.push_back(discount);
 }
 
-double Cart::gettotal() const {
+double cart::gettotal() const {
 	double total{ 0.0 };
 
 	for (const auto& p : products) {

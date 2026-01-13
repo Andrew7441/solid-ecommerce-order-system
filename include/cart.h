@@ -1,16 +1,16 @@
 #pragma once
 #include "discount.h"
-#include "Product.h"
+#include "product.h"
 #include <vector>
 #include <memory>
 
-class Cart {
+class cart {
 private:
-	std::vector<Product> products;
+	std::vector<product> products;
 	std::vector<std::shared_ptr<discount>> discounts;
 
 public:
-	void addProduct(const Product& product);
+	void addproduct(const product& product);
 	void addDiscount(std::shared_ptr<discount> discount);
 
 	double gettotal() const;
