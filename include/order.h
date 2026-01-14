@@ -19,8 +19,10 @@ private:
 public:
 	order(const std::string& id, const std::vector<product> products);
 	void calculateTotal();
+	void setstatus(orderstatus status);
+
 	double get_total() const;
+	std::string getid() const;
 	const std::vector<product>& getproducts() const;
 	orderstatus getstatus() const;
-	void setstatus(orderstatus status);
 };
