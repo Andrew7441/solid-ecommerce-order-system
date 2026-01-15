@@ -1,5 +1,5 @@
 #pragma once
-
+#include "cart.h"
 class cart;
 
 class Ishippingcalculator {
