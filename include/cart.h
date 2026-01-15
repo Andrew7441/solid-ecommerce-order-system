@@ -12,6 +12,6 @@ private:
 public:
 	void addproduct(const product& product);
 	void addDiscount(std::shared_ptr<discount> discount);
-
+	std::vector<product> getproducts() const;
 	double gettotal() const;
 };

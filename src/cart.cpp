@@ -21,3 +21,7 @@ double cart::gettotal() const {
 
 	return total;
 }
+
+std::vector<product> cart::getproducts() const {
+	return products;
+}
