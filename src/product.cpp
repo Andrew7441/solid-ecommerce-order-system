@@ -14,3 +14,6 @@ double product::getprice() const {
 	return price;
 }
 
+const std::string& product::getcategory() const {
+	return category;
+}
