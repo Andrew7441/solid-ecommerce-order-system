@@ -14,7 +14,7 @@
 
 int main() {
 
-	product p1("Macbook", "Electronics", 2000.0);
+	product p1("Macbook Pro", "Electronics", 2000.0);
 
 	cart myCart;
 
@@ -22,13 +22,16 @@ int main() {
 
 	myCart.addDiscount(std::make_shared<discountseasonal>()); 
 
-	InMemoryOrderRepository repo;
-	PaymentProcessor paymentProcessor;	// Implements Ipaymentprocessor
-	FlatRateShippingCalculator shippingCalc(15.0);
+	InMemoryOrderRepository repo;									// Implements IorderRepository
+	PaymentProcessor paymentProcessor;								// Implements Ipaymentprocessor
+	FlatRateShippingCalculator shippingCalc(15.0);					// Implements Ishippingcalculator
 
 	CheckoutService checkoutService(repo, paymentProcessor, shippingCalc);
 
 	order ord = checkoutService.checkout(myCart);
+	std::cout << "Product:\nName: " << p1.getname()
+		<< "\nCategory: " << p1.getcategory()
+		<< "\nPrice: " << p1.getprice() << std::endl;
 
 	std::cout << "Order ID: " << ord.getid() << std::endl;
 	std::cout << "Order Total: " << ord.get_total() << std::endl;
