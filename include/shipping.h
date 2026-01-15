@@ -8,7 +8,7 @@ public:
 	virtual ~Ishippingcalculator() = default;
 };
 
-class FlatRateShippingCalculator : Ishippingcalculator {
+class FlatRateShippingCalculator : public Ishippingcalculator {
 private:
 	double rate;
 public:

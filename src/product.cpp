@@ -10,10 +10,6 @@ const std::string& product::getname() const {
 	return name;
 }
 
-const std::string& product::getname() const {
-	return category;
-}
-
 double product::getprice() const {
 	return price;
 }

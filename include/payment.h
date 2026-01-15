@@ -15,5 +15,4 @@ private:
 
 public:	
 	virtual std::string processPayment(double amount);
-
 };

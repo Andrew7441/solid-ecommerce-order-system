@@ -1,25 +1,18 @@
 #include "repository.h"
 
+void InMemoryOrderRepository::save(const order& order) {
+	orders.push_back(order);
+}
 
-class InMemoryOrderRepository : IorderRepository {
-private:
-	std::vector<order> orders;
-
-public:
-	virtual void save(const order& order) {
-		orders.push_back(order);
-	}
-
-	virtual std::optional<order> getbyId(const std::string& id) {
-		for (const auto& o : orders) {
-			if (o.getid() == id) {
-				return o;
-			}
+std::optional<order> InMemoryOrderRepository::getbyId(const std::string& id) {
+	for (const auto& o : orders) {
+		if (o.getid() == id) {
+			return o;
 		}
-		return std::nullopt;
 	}
+	return std::nullopt;
+}
 
-	virtual std::vector<order> getAll() {
-		return orders;
-	}
-};
+std::vector<order> InMemoryOrderRepository::getAll() {
+	return orders;
+}
